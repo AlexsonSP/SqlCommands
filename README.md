@@ -17,3 +17,5 @@ having
     
 ## FIND COLUMN NAME    
 select table_name, column_name from all_tab_columns where UPPER(column_name) like UPPER('%PROTOCOLO%')
+
+SELECT DISTINCT TABLE_NAME, COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE column_name LIKE 'entities_id%' ORDER BY COLUMN_NAME, TABLE_NAME
